@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator · basic</title>
+  <link rel="stylesheet" href="calculator.css">
+  <!-- Font Awesome (optional but used for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+ 
+</head>
+<body>
+  <div class="calculator" role="application" aria-label="Calculator">
+
+    <!-- display area -->
+    <div class="display" id="display">
+      <div class="expression" id="expression"></div>
+      <div class="result" id="result">0</div>
+    </div>
+
+    <!-- buttons -->
+    <div class="buttons">
+      <!-- row 1: AC, %, ÷ -->
+      <button class="btn function" data-value="clear" aria-label="clear all"><i class="fas fa-undo-alt"></i></button>
+      <button class="btn function" data-value="percent">%</button>
+      <button class="btn operator" data-value="÷"><i class="fas fa-divide"></i></button>
+
+      <!-- row 2: 7,8,9,× -->
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn operator" data-value="×"><i class="fas fa-times"></i></button>
+
+      <!-- row 3: 4,5,6,− -->
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn operator" data-value="−"><i class="fas fa-minus"></i></button>
+
+      <!-- row 4: 1,2,3,+ -->
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn operator" data-value="+"><i class="fas fa-plus"></i></button>
+
+      <!-- row 5: 0 (span2), ., = -->
+      <button class="btn zero" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn equals" data-value="="><i class="fas fa-equals"></i></button>
+    </div>
+
+    <div class="key-hint">
+      <i class="fas fa-keyboard"></i> keyboard supported · <kbd>Enter</kbd> <kbd>Esc</kbd>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
